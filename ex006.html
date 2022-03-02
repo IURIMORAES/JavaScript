@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Program</title>
+        
+        <style> /*estilo do programa*/
+            
+            body /*estilo do plano de fundo*/
+            {
+                background-color: rgb(255, 255, 255);
+                color: black;
+                font: normal 20pt arial;
+            } 
+
+            h1  /*estilo do título*/
+            {
+                color: rgb(0, 0, 0); 
+                font: normal 40pt Comic;   
+            }
+
+            p   /*estilo do texto*/
+            {
+                color: black;
+                font: normal 20pt Arial;
+            }
+
+        </style>
+
+</head>
+
+    <body>
+    <h1> Olá Mundo!</h1>
+    <p>Já me livrei da maldição!!</p>
+    
+      <script>   /*javascript*/
+
+        alert("Bem vindo ao curso em vídeo!!")
+
+        // Recebe os dados pessoais do usuário
+        var nome = prompt("Para começarmos, qual seu nome?")
+        var idade = Number(prompt("Qual sua idade?"))
+        var salario = Number.parseFloat(prompt("Qual seu salário desejado como desenvolvedor?"))
+
+        //  Faz a operação do calculo de reserva
+        var reserva = Number(prompt("Desse seu futuro salário quanto predente guardar todos os meses?"))
+        var meses = Number(prompt("Por quantos meses você irá fazer essa econômia?"))
+        var mult = reserva*meses
+        
+        // Imprimeminformações no HTML
+        document.writeln(`Maravilha <strong>${nome.toString()}</strong> agora já sabemos que pela sua faixa etária de <strong>${idade}</strong> anos, você já pode concorrer a salários maiores como <strong>${salario.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}</strong> </br>`)
+        document.writeln(`Muito bem então no final dos <strong>${meses}</strong> meses que você guardou, você terá <strong>${mult.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}</strong>` )
+        
+      </script>
+
+    </body>
+</html>
