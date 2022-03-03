@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONCRETIZAR</title>
+
+    <style>
+        /*CSS*/
+        body
+        {
+            background-color: rgba(66, 66, 197, 0.747);
+            color: white;
+            font: normal    25pt    arial;            
+        }
+
+        h1
+        {   
+            color: white;
+            font: normal    40pt   arial;  
+        }
+
+        p
+        {
+
+            color: white;
+            font: normal    25pt   arial;  
+        }
+
+    </style>
+
+    <!-- HTML -->
+
+    <h1>
+        <strong>Faça os cálculos de seus ganhos e saiba quanto irá poupar para o futuro</strong>
+    </h1>
+    <p>
+        <strong>
+            
+                Dados cadastrais:
+
+        </strong>
+    </p>
+
+</head>
+
+<body>
+    
+    <script>
+        // Javascript
+
+        alert('Bem vindo!!!')
+
+        // Coleta dados do usuário
+
+        var nome = String(prompt('Qual é o seu nome?'))
+        var idade = Number.parseInt(prompt('Qual é sua idade?'))
+        var salario = Number.parseFloat(prompt('Quanto pretende receber com programação?'))
+        var reserva = Number.parseFloat(prompt('Quanto pretende guardar mensalmente?'))
+        var meses = Number.parseInt(prompt('Por quantos'))
+        var mult = reserva*meses
+
+        // Impressão dos dados no Documento
+
+        document.writeln(`Seja bem-vindo, seus dados são: </br>Nome: <strong>${nome.toString().toUpperCase()}</strong> , Idade: <strong>${idade}</strong> anos </br>`)
+        document.writeln(`Sua pretenção salárial é de <strong>${salario.toLocaleString('pt-BR' , {style: 'currency' , currency: 'BRL'})}</strong> </br>`)
+        document.writeln(`Mediante a sua econômia de <strong>${reserva.toLocaleString('pt-BR' , {style: 'currency' , currency: 'BRL'})}</strong> pelos próximos <strong>${meses}</strong> meses você terá: </br>`)
+        document.writeln(`<strong>${mult.toLocaleString('pt-BR' , {style: 'currency' , currency: 'BRL'})}</strong></br>`)
+        document.writeln(`</br><strong>PARABÉNS!!!</strong>`)
+
+    
+    </script>
+    
+</body>
+</html>
